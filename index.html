@@ -220,32 +220,57 @@
     <section id="projects" class="mb-5" tabindex="0">
       <h3 class="section-title">Projects</h3>
       <div class="row g-4">
-        <!-- Project : TASKANA Test Engineering Pipeline -->
+        <!-- Project : Secure Banking System -->
         <div class="col-12 col-md-6">
-          <div class="project-block project-summary" tabindex="0" role="button" aria-label="Open Project Modal" data-bs-toggle="modal" data-bs-target="#projectModalTaskanaTesting">
+          <div class="project-block project-summary" tabindex="0" role="button" aria-label="Open Project Modal" data-bs-toggle="modal" data-bs-target="#projectModalSecureBanking">
             <div class="d-flex align-items-center mb-2">
-              <h4 class="me-2">TASKANA Test Engineering Pipeline</h4>
+              <h4 class="me-2">Secure Banking System - COE817</h4>
             </div>
-            <div class="project-date">Toronto Metropolitan University | Jan 2026 - Apr 2026</div>
+            <div class="project-date">Toronto Metropolitan University | Sep 2024 - Dec 2024</div>
             <ul>
-              <li>Designed and executed an end-to-end <span class="ats-highlight">automated test engineering pipeline</span> for a large Java codebase, integrating JUnit 5, Maven, JaCoCo, and PIT mutation testing.</li>
-              <li>Built and productionized an <span class="ats-highlight">LLM-assisted</span> test generation workflow using Ollama and custom automation, with full artifact traceability and measurable validation against manual baselines.</li>
-              <li>Performed quantitative quality analysis using coverage, mutation score benchmarking, failure triage, and root-cause classification, translating results into scalable test strategy recommendations.</li>
+              <li>Built a secure multi-client banking <span class="ats-highlight">system</span> in Java using cryptographic protocols for authentication, session management, and transaction integrity.</li>
+              <li>Implemented RSA registration, PBKDF2 password hashing, nonce-challenge authentication, and AES-HMAC protection to strengthen <span class="ats-highlight">security</span> and <span class="ats-highlight">system reliability</span>.</li>
+              <li>Engineered a TCP/IP socket communication layer with multi-threaded client handling and structured error recovery for concurrent client sessions.</li>
             </ul>
             <div class="project-skills mb-2">
               <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:language-java"></span> Java</span>
-              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:test-tube"></span> JUnit 5</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:key-variant"></span> RSA</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:shield-lock"></span> AES-HMAC</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:lock-reset"></span> PBKDF2</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:lan-connect"></span> TCP/IP Sockets</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:source-branch"></span> Multi-threading</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project : COE891 Software Testing - TASKANA -->
+        <div class="col-12 col-md-6">
+          <div class="project-block project-summary" tabindex="0" role="button" aria-label="Open Project Modal" data-bs-toggle="modal" data-bs-target="#projectModalTaskanaTesting">
+            <div class="d-flex align-items-center mb-2">
+              <h4 class="me-2">COE891 Software Testing - TASKANA</h4>
+            </div>
+            <div class="project-date">Toronto Metropolitan University | Jan 2026 - Apr 2026</div>
+            <ul>
+              <li>Built a comprehensive software testing project applying 5 structured methodologies to a production Java/Spring Boot task management REST API.</li>
+              <li>Wrote 40+ test methods covering 230 test cases using CFG, ISP, logic-based, mutation, and <span class="ats-highlight">LLM-assisted</span> testing strategies.</li>
+              <li>Configured Maven and Docker-based multi-database CI workflows, improving <span class="ats-highlight">test reliability</span>, reproducibility, and engineering validation.</li>
+            </ul>
+            <div class="project-skills mb-2">
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:language-java"></span> Java</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:test-tube"></span> JUnit</span>
               <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:hammer-wrench"></span> Maven</span>
-              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:chart-donut"></span> JaCoCo</span>
-              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:bug-check"></span> PIT</span>
-              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:robot-outline"></span> Ollama</span>
-              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:source-branch"></span> QA Engineering</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:docker"></span> Docker</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:sprout"></span> Spring Boot</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:database"></span> PostgreSQL</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:database-sync"></span> Oracle</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:robot-outline"></span> Ollama (LLM)</span>
+              <span class="badge bg-accent me-1"><span class="iconify" data-icon="mdi:source-branch"></span> CI/CD</span>
             </div>
             <a href="https://github.com/quangminhtra/coe891-taskana-testing" target="_blank" class="neumorphic-btn" aria-label="GitHub Repository">
               <svg width="32" height="32" fill="#0092E4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path></svg>
             </a>
           </div>
-        </div>        <!-- Project : TTC Transit Tracker -->
+        </div>
+        <!-- Project : TTC Transit Tracker -->
         <div class="col-12 col-md-6">
           <div class="project-block project-summary" tabindex="0" role="button" aria-label="Open Project Modal" data-bs-toggle="modal" data-bs-target="#projectModalTTCTransitTracker">
             <div class="d-flex align-items-center mb-2">
@@ -636,27 +661,77 @@
 
       <!-- Project Modals Pop Up -->
 
-      <!-- Project: TASKANA Test Engineering Pipeline -->
-      <div class="modal fade modal-fullscreen" id="projectModalTaskanaTesting" tabindex="-1" aria-labelledby="projectModalTaskanaTestingLabel" aria-hidden="true">
+      <!-- Project: Secure Banking System -->
+      <div class="modal fade modal-fullscreen" id="projectModalSecureBanking" tabindex="-1" aria-labelledby="projectModalSecureBankingLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="projectModalTaskanaTestingLabel">TASKANA Test Engineering Pipeline</h5>
+              <h5 class="modal-title" id="projectModalSecureBankingLabel">Secure Banking System</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="project-skills mb-4">
                 <span class="badge bg-accent me-1">Java</span>
-                <span class="badge bg-accent me-1">JUnit 5</span>
-                <span class="badge bg-accent me-1">Maven</span>
-                <span class="badge bg-accent me-1">JaCoCo</span>
-                <span class="badge bg-accent me-1">PIT</span>
-                <span class="badge bg-accent me-1">Ollama</span>
-                <span class="badge bg-accent me-1">QA Engineering</span>
+                <span class="badge bg-accent me-1">RSA</span>
+                <span class="badge bg-accent me-1">AES-HMAC</span>
+                <span class="badge bg-accent me-1">PBKDF2</span>
+                <span class="badge bg-accent me-1">TCP/IP Sockets</span>
+                <span class="badge bg-accent me-1">Multi-threading</span>
               </div>
 
               <p class="mt-4 mb-4">
-                Automated test engineering project focused on reliability, verification quality, LLM-assisted test generation, and measurable quality benchmarking for a large Java codebase.
+                Secure multi-client banking system built in Java using cryptographic protocols for authentication, session management, and transaction integrity.
+              </p>
+
+              <h6>Highlights</h6>
+              <ul>
+                <li>Designed and built a Java client-server banking system supporting 3 concurrent ATM clients with full account management, including deposit, withdraw, and balance operations.</li>
+                <li>Implemented RSA registration, PBKDF2 password hashing with 120,000 iterations, and mutual nonce-challenge authentication to establish secure sessions.</li>
+                <li>Secured all transactions with AES-HMAC encryption, replay protection via sequence numbers, and encrypted audit logging.</li>
+                <li>Engineered a TCP/IP socket communication layer with multi-threaded client handling and structured error recovery.</li>
+              </ul>
+
+              <h6>Project Visuals</h6>
+              <div class="project-placeholder my-3">
+                <strong>Placeholder:</strong> client-server banking workflow diagram
+              </div>
+              <div class="project-placeholder my-3">
+                <strong>Placeholder:</strong> authentication and encryption sequence diagram
+              </div>
+              <div class="project-placeholder my-3">
+                <strong>Placeholder:</strong> transaction or audit logging screenshot
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">&larr; Go Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: COE891 Software Testing - TASKANA -->
+      <div class="modal fade modal-fullscreen" id="projectModalTaskanaTesting" tabindex="-1" aria-labelledby="projectModalTaskanaTestingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalTaskanaTestingLabel">COE891 Software Testing - TASKANA</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="project-skills mb-4">
+                <span class="badge bg-accent me-1">Java</span>
+                <span class="badge bg-accent me-1">JUnit</span>
+                <span class="badge bg-accent me-1">Maven</span>
+                <span class="badge bg-accent me-1">Docker</span>
+                <span class="badge bg-accent me-1">Spring Boot</span>
+                <span class="badge bg-accent me-1">PostgreSQL</span>
+                <span class="badge bg-accent me-1">Oracle</span>
+                <span class="badge bg-accent me-1">Ollama (LLM)</span>
+                <span class="badge bg-accent me-1">CI/CD</span>
+              </div>
+
+              <p class="mt-4 mb-4">
+                Comprehensive software testing project applying 5 structured methodologies to a production Java/Spring Boot task management REST API.
               </p>
 
               <p class="mt-2 mb-4">
@@ -666,11 +741,10 @@
 
               <h6>Highlights</h6>
               <ul>
-                <li>Designed and executed an end-to-end automated test engineering pipeline for TASKANA, integrating JUnit 5, Maven, JaCoCo, and PIT mutation testing to improve reliability and verification quality.</li>
-                <li>Built and productionized an LLM-assisted test generation workflow using Ollama and custom automation, with full artifact traceability across prompts, raw responses, generated tests, and repair logs.</li>
-                <li>Implemented and validated targeted unit and component tests across utility, parser, and service layers, including CFG and DFG-oriented scenarios with reproducible command-driven execution.</li>
-                <li>Performed quantitative quality analysis using coverage metrics, mutation score benchmarking, failure triage, and root-cause classification to produce actionable engineering recommendations.</li>
-                <li>Collaborated in a 5-member QA engineering team to coordinate ISP, logic-based, CFG/DFG, mutation, and LLM-assisted test workflows.</li>
+                <li>Wrote 40+ test methods covering 230 test cases using CFG, ISP, logic-based, and mutation testing strategies against a Java/Spring Boot REST API.</li>
+                <li>Configured Maven build system and Docker-based multi-database CI pipelines supporting H2, PostgreSQL, and Oracle-compatible schemas.</li>
+                <li>Applied Ollama LLM for AI-assisted test case generation and evaluated output quality against manually authored JUnit suites.</li>
+                <li>Participated in code reviews across 47 pull requests in a 4-member team while maintaining structured test documentation throughout the SDLC.</li>
               </ul>
 
               <h6>Project Visuals</h6>
@@ -678,10 +752,10 @@
                 <strong>Placeholder:</strong> coverage and mutation testing dashboard screenshot
               </div>
               <div class="project-placeholder my-3">
-                <strong>Placeholder:</strong> generated test artifact traceability workflow
+                <strong>Placeholder:</strong> Docker-based multi-database pipeline diagram
               </div>
               <div class="project-placeholder my-3">
-                <strong>Placeholder:</strong> QA pipeline or repository structure diagram
+                <strong>Placeholder:</strong> LLM-assisted test generation workflow
               </div>
             </div>
             <div class="modal-footer">
@@ -1195,7 +1269,7 @@
       <h3 class="section-title">Connect</h3>
       <div class="d-flex flex-wrap gap-4 align-items-center">
         <a href="https://www.linkedin.com/in/minhtran3005/" class="connect-link" aria-label="LinkedIn" target="_blank" rel="noopener"><span class="iconify" data-icon="mdi:linkedin"></span> LinkedIn</a>
-        <a href="https://github.com/quangminhtra/quangminhtra" class="connect-link" aria-label="GitHub" target="_blank" rel="noopener"><span class="iconify" data-icon="mdi:github"></span> GitHub</a>
+        <a href="https://github.com/quangminhtra/" class="connect-link" aria-label="GitHub" target="_blank" rel="noopener"><span class="iconify" data-icon="mdi:github"></span> GitHub</a>
         <a href="mailto:qminh30k3@gmail.com" class="connect-link" aria-label="Email"><span class="iconify" data-icon="mdi:email"></span> Email</a>
         <a href="PDF file - References/Marshall_Tran_Resume.pdf" class="connect-link" aria-label="Download Resume" target="_blank" rel="noopener"><span class="iconify" data-icon="mdi:file-download"></span> Resume</a>
         <a href="PDF file - References/Reference-Letters.pdf" class="connect-link" aria-label="Download Reference Letter" target="_blank" rel="noopener"><span class="iconify" data-icon="mdi:file-certificate"></span> Reference Letter</a>
@@ -1226,6 +1300,8 @@
   <script src="scripts/animations.js"></script>
 </body>
 </html>
+
+
 
 
 
