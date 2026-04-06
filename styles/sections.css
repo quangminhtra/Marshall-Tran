@@ -283,3 +283,103 @@ header .display-4 {
     grid-template-columns: 1fr;
   }
 }
+
+#experience .experience-stack {
+  display: grid;
+  gap: 1.35rem;
+}
+
+#experience .experience-feature {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04)),
+    rgba(6, 20, 53, 0.92);
+  border: 1px solid rgba(102, 181, 255, 0.24);
+  border-radius: 24px;
+  padding: 1.6rem 1.7rem;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+#experience .experience-feature-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.9rem;
+}
+
+#experience .experience-feature-header h4 {
+  margin-bottom: 0.3rem;
+}
+
+#experience .experience-feature-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  color: var(--muted);
+}
+
+#experience .experience-feature-subtitle a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+#experience .experience-feature-date {
+  color: #ffd866;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#experience .experience-feature-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+#experience .experience-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-weight: 600;
+}
+
+#experience .experience-pill-primary {
+  background: rgba(102, 181, 255, 0.16);
+  border-color: rgba(102, 181, 255, 0.4);
+  color: #b9ddff;
+}
+
+#experience .experience-feature-list {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#experience .experience-feature-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+#experience .experience-feature-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+@media (max-width: 767.98px) {
+  #experience .experience-feature {
+    padding: 1.3rem;
+    border-radius: 20px;
+  }
+
+  #experience .experience-feature-header {
+    flex-direction: column;
+  }
+
+  #experience .experience-feature-date {
+    white-space: normal;
+  }
+}
