@@ -324,7 +324,7 @@ header .display-4 {
 }
 
 #experience .experience-feature-date {
-  color: #ffd866;
+  color: #d8e6ee;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -348,9 +348,9 @@ header .display-4 {
 }
 
 #experience .experience-pill-primary {
-  background: rgba(102, 181, 255, 0.16);
-  border-color: rgba(102, 181, 255, 0.4);
-  color: #b9ddff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #d8e6ee;
 }
 
 #experience .experience-feature-list {
@@ -383,3 +383,5 @@ header .display-4 {
     white-space: normal;
   }
 }
+
+
