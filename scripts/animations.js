@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.skill-block, .exp-block, .project-block');
   const revealTargets = [...sections, ...cards];
   const heroTargets = document.querySelectorAll('header > *');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
   heroTargets.forEach((element) => element.classList.add('hero-stagger'));
   revealTargets.forEach((element) => element.classList.add('reveal'));
 
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  if (prefersReducedMotion || isMobile || !('IntersectionObserver' in window)) {
     heroTargets.forEach((element) => element.classList.add('is-visible'));
     revealTargets.forEach((element) => element.classList.add('is-visible'));
     return;
@@ -28,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.14,
-      rootMargin: '0px 0px -40px 0px',
+      threshold: 0.08,
+      rootMargin: '0px 0px -24px 0px',
     }
   );
 
