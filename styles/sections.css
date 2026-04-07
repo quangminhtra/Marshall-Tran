@@ -412,3 +412,24 @@ header .display-4 {
     font-size: 1.25rem;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .social-sidebar {
+    left: 0.55rem !important;
+    right: auto !important;
+    gap: 0.45rem;
+    padding: 0.55rem 0.45rem;
+  }
+
+  .social-sidebar-link {
+    width: 3.15rem;
+    height: 3.15rem;
+    border-radius: 14px;
+  }
+
+  .social-sidebar-link .iconify {
+    font-size: 1.45rem;
+  }
+}
