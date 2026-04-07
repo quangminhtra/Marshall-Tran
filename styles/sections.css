@@ -385,3 +385,40 @@ header .display-4 {
 }
 
 
+
+
+#connect .connect-layout {
+  gap: 2rem;
+}
+
+#connect .connect-diamond {
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  #connect .connect-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #connect .connect-links {
+    justify-content: center;
+  }
+
+  .connect-link {
+    justify-content: center;
+  }
+
+  .connect-diamond {
+    max-width: 230px;
+  }
+
+  .diamond-card .iconify {
+    font-size: 1.65rem;
+  }
+
+  .diamond-label {
+    font-size: 0.78rem;
+  }
+}

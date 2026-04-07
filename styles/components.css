@@ -312,3 +312,94 @@ section.is-visible .section-title::after {
     transition: none !important;
   }
 }
+
+
+.connect-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(260px, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.connect-diamond {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+  max-width: 280px;
+}
+
+.diamond-card {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+  transform: rotate(45deg);
+  border-radius: 22px;
+  transition:
+    transform var(--transition-med),
+    box-shadow var(--transition-med),
+    border-color var(--transition-med),
+    background-color var(--transition-med);
+}
+
+.diamond-card > * {
+  transform: rotate(-45deg);
+}
+
+.diamond-card .iconify {
+  font-size: 2rem;
+}
+
+.diamond-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.diamond-card:hover {
+  transform: rotate(45deg) translateY(-6px) scale(1.04);
+  color: #fff;
+}
+
+.diamond-linkedin:hover {
+  background: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.9);
+  box-shadow: 0 20px 40px rgba(10, 102, 194, 0.3);
+}
+
+.diamond-discord:hover {
+  background: #5865f2;
+  border-color: rgba(88, 101, 242, 0.9);
+  box-shadow: 0 20px 40px rgba(88, 101, 242, 0.3);
+}
+
+.diamond-github:hover {
+  background: #111827;
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.diamond-email:hover {
+  background: #088395;
+  border-color: rgba(8, 131, 149, 0.9);
+  box-shadow: 0 20px 40px rgba(8, 131, 149, 0.32);
+}
+
+.connect-copy {
+  color: var(--muted);
+  margin-bottom: 1rem;
+  max-width: 32rem;
+}
+
+.connect-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
