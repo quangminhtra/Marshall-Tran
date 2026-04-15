@@ -84,6 +84,75 @@ header .display-4 {
   color: var(--muted);
 }
 
+.project-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.35rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03)),
+    rgba(8, 19, 47, 0.86);
+}
+
+.project-feature-capstone {
+  border-color: rgba(255, 216, 102, 0.32);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.project-feature-copy h6 {
+  margin-bottom: 0.75rem;
+}
+
+.project-feature-copy p {
+  margin-bottom: 1rem;
+}
+
+.project-feature-kicker {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 216, 102, 0.14);
+  border: 1px solid rgba(255, 216, 102, 0.32);
+  color: #ffe38f;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-feature-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.project-feature-links a {
+  color: #8fd7ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-feature-links a:hover {
+  color: #b8e6ff;
+}
+
+.project-feature-figure {
+  margin: 0;
+}
+
+.project-poster-image {
+  width: 100%;
+  max-width: 680px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+}
+
 #connect .d-flex {
   gap: 1rem !important;
 }
@@ -101,6 +170,11 @@ header .display-4 {
 
   .connect-link {
     justify-content: center;
+  }
+
+  .project-feature {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 }
 
